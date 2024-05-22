@@ -1,0 +1,718 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Futura', 'Trebuchet MS', Arial, sans-serif;
+}
+body {
+    background-color: aliceblue;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),url(images/Background-image1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+nav {
+    height: 85px;
+    background: #fff;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav h1{
+    color: #7a2121;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-style: oblique;
+    margin-left: 10px;
+}
+
+
+nav .mainMenu {
+    display: flex;
+    list-style: none;
+  }
+  nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    font-family: 'Futura';
+    font-size: 18px;
+    font-weight: 700;
+    transition: 0.2s ease;
+  }
+  nav .mainMenu li a.active {
+    color: #7a2121;
+  }
+
+
+  nav .mainMenu li a:hover {
+    background: rgb(232, 226, 226);
+  }
+  nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+nav .mainMenu .closeMenu,.icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+.fa-facebook-f:hover {
+    color: #4267B2;
+}
+.fa-instagram:hover {
+    color: rgb(255, 0, 191);
+}
+.fa-spotify:hover {
+    color:#1DB954;
+}
+.fa-youtube:hover {
+    color: #FF0000;
+}
+.logo img {
+    width: 15%;
+}
+.nav .logo {
+    margin: 6px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.intro-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.profileimage {
+    margin: 20px;
+    padding: 20px;
+}
+
+.profileinfo {
+    padding: 20px;
+    margin: 20px;
+    background-color: rgba( 0, 0, 0, 0.1);
+}
+.profileimage img {
+    width: 80%;
+    height: auto;
+}
+
+.profileinfo h1 {
+    margin-bottom: 20px;
+}
+
+.profileinfo li {
+    list-style: none;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 25px;
+    line-height: 1.6;
+
+}
+
+.intro h1 {
+    margin-bottom: 2%;
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: center;
+}
+.intro p {
+    text-align:left;
+    font-size: 1.2rem;
+}
+.cta-button {
+    display: inline-block;
+    background-color: #48685c;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 10px 20px;
+    
+}
+
+.cta-button:hover {
+    background-color: #000;
+}
+
+#about-me {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin: 20px auto;
+}
+
+#about-me img {
+    border-radius: 50%;
+    margin-bottom: 20px;
+    max-width: none;  /* Override any existing max-width */
+    width: 60%;      /* Make the image responsive to the container size */
+}
+
+
+#about-me h1 {
+    color: #333;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+#about-me p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+#about-me button {
+    background-color: #7a2121;  /* Blue color, change as per your theme */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#about-me button:hover {
+    background-color: #270303;  /* Darker blue on hover */
+}
+
+
+/* Media query for tablets and smaller devices */
+@media (max-width: 768px) {
+    .intro p {
+        font-size: 1.2rem;
+    }
+    .intro h1 {
+        font-weight: 900;
+    }
+    #about-me h1 {
+        font-size: 20px;
+    }
+
+    #about-me p {
+        font-size: 1rem;
+    }
+}
+
+footer {
+    background-color: #333; /* Dark charcoal background */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-section {
+    margin: 10px;
+    line-height: 1.6;
+    font-family: 'Futura';
+}
+
+.footer-section h4 {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+
+}
+
+.footer-social a {
+    font-size: 1.5rem;
+    color: antiquewhite;
+    padding: 10px;
+}
+.footer-social p {
+    margin-top: 8px;
+}
+.footer-social a:hover {
+    background-color:#333;
+
+}
+
+.footer-social h4 {
+    font-size: 1.3rem;
+}
+
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    color:antiquewhite;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #FFD700; /* Bright yellow for hover effect */
+}
+
+.footer-section form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer-section input, .footer-section button {
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.footer-section button {
+    background-color: #FFD700; /* Bright yellow background for button */
+    cursor: pointer;
+    color: #333; /* Dark text for button */
+}
+
+.footer-section button:hover {
+    background-color: #FFA500; /* Darker shade of yellow for hover effect */
+}
+
+.copyrights p {
+    color: #fff;
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.home-footer {
+    display: flex;
+    justify-content: space-between; /* Adjusts space distribution */
+    align-items: center;
+    width: 100%;
+    padding: 20px; /* Adds some padding inside the footer */
+    background-color: rgb(50, 49, 49);
+    color: #fff; /* Sets the text color to white for all child elements */
+}
+
+.contact-info, .social-links, .contact-form {
+    flex: 1; /* Gives an equal flex basis for each section, adjust as needed */
+    text-align: center; /* Center text for smaller sections */
+}
+
+
+.social-links a {
+    list-style: none; /* Removes bullets from the list */
+    padding: 0; /* Removes padding */
+    margin: 0; /* Removes margin */
+    text-decoration: none; /* Removes underline from links */
+}
+
+.contact-form input[type="text"], .contact-form input[type="email"], .contact-form button {
+    margin: 5px 0; /* Adds a small margin to each form element */
+    padding: 10px; /* Adds padding inside form fields and button */
+    width: 90%; /* Makes form elements take up 90% of their parent's width */
+}
+.social-links a {
+    font-size: 2rem;
+    color: #fff;
+    display: inline-block; /* Aligns icons in a row */
+    margin: 0 10px; /* Adds horizontal space between icons */
+}
+.social-links h4 {
+    font-family: 'Futura';
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.about-section {
+    display: flex;
+    flex-wrap: wrap; /* Allows content to wrap onto the next line if not enough space */
+    justify-content: center; /* Horizontally center the content */
+    align-items: flex-start; /* Align items to the top */
+    gap: 20px;
+    padding: 20px;
+    line-height: 1.6;
+    margin-top: 50px; /* Adjust this value as needed to create space */
+
+}
+.about-nav {
+    background-color: #fff;    
+}
+.about-nav .mainMenu li a {
+    color: #000;
+}
+.resumelink {
+    color: #7a2121;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.about-section h2, h3 {
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 2rem;
+    font-weight: 900;
+}
+.about-image, .about-info {
+    flex: 1; /* Both children will take up equal space */
+    min-width: 300px; /* Minimum width before wrapping occurs */
+}
+.about-image img {
+    max-width: 100%; /* Make sure image is responsive and doesn't overflow */
+    height: auto;
+}
+.about-quote {
+    margin-top: 20px; /* Adds space above the quote */
+    padding: 20px;
+    background-color: #f0f0f0; /* Light background for the quote */
+    border-left: 5px solid #4e3636; /* Adds a distinguishing bar to the left */
+    font-style: italic; /* Italicize quote */
+    text-align: center; /* Center-align the text */
+    color: #333; /* Dark text color for contrast */
+}
+
+.about-quote footer {
+    margin-top: 10px;
+    font-style: normal; /* Overrides the italic style for the citation */
+    font-weight: bold; /* Make the author's name stand out */
+    text-align: right; /* Aligns the author's name to the right */
+}
+.resume-page {
+    background-image: url('images/paper-7045207_128.jpg'); /* Update with your chosen image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #f0f0f0;
+}
+.resume {
+    display: block;
+    padding: 20px;
+    line-height: 1.6;
+}
+.resume a {
+    color: rgb(28, 194, 103);
+}
+.resume h1 {
+    text-align: center;
+    font-weight: 900;
+}
+
+.resume h2 {
+    text-align: center;
+}
+.skills ul{
+    display: inline-block;
+}
+
+.resume h2{
+        text-align: left;
+        font-size: 1.3rem;
+}
+.resume-image img {
+    width: 100%;
+    height: 375px;
+
+}
+.resumebreak img {
+    width: 100%;
+    height: 400px;
+}
+
+/* ... existing styles ... */
+.skills-icons {
+    text-align: center;
+    padding: 20px;
+}
+
+.skill-icon {
+    display: inline-block;
+    margin: 10px;
+    font-size: 40px; /* Adjust size as needed */
+    color: #7a2121; /* Match with your color scheme */
+    transition: transform 0.3s ease;
+}
+
+.skill-icon:hover {
+    transform: scale(1.1); /* Slightly enlarge icons on hover */
+    color: #000; /* Change color on hover if you wish */
+}
+
+/* Optionally, style the tooltip (title attribute) */
+.skill-icon[title]:hover:after {
+    content: attr(title);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 8px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    z-index: 20;
+}
+
+/* Tooltips */
+.skill-icon[title]:hover:after {
+    content: attr(title);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px); /* Slightly adjust the position */
+    padding: 5px 8px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    z-index: 20;
+    opacity: 0;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.skill-icon:hover:after {
+    opacity: 1; /* Make the tooltip visible on hover */
+    transform: translateX(-50%) translateY(5px); /* Adjust the movement for visible transition */
+}
+
+
+/* Java icon with its characteristic reddish-brown color */
+.skill-icon .fab.fa-java {
+    color: #5382A1; /* Java's logo color */
+}
+
+/* Python icon with gradient to mimic its blue and yellow colors */
+.skill-icon .fab.fa-python {
+    background: linear-gradient(45deg, #FFD43B, #4B8BBE);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* MySQL icon with its characteristic blue color */
+.skill-icon .fas.fa-database {
+    color: #00758F; /* MySQL's logo color */
+}
+.timeline-container {
+    width: 90%;
+    margin: auto;
+}
+
+.timeline {
+    list-style: none;
+    padding: 0;
+}
+
+.timeline-entry {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.timeline-entry:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #7a2121;
+}
+
+
+.timeline-date {
+    font-weight: bold;
+}
+
+.timeline-title {
+    margin: 5px 0;
+}
+
+.timeline-detail {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 250px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+
+/* Optional: Add connectors between the dots */
+.timeline-entry:not(:last-child):after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: #7a2121;
+    top: 20px;
+    left: 7px;
+    bottom: -20px;
+}
+
+/* Existing styles from previous examples */
+
+.timeline-detail {
+    display: none;
+    /* Additional styles for detail popups */
+}
+
+/* Add active class styles if you’re using JavaScript to toggle class */
+.active .timeline-detail {
+    display: block;
+    /* Adjust styles for active state */
+}
+
+.contact-section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h2 {
+    color: #333;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.contact-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.contact-section .form-group {
+    margin-bottom: 1em;
+}
+
+.contact-section .form-group label {
+    display: block;
+    margin-bottom: .5em;
+    color: #333;
+}
+
+.contact-section .form-group input,
+.contact-section .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+/* For Responsive Design */
+@media (max-width: 768px) {
+    
+    .footer-content {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .social-links h4 {
+        margin-top: 20px;
+    }
+    nav .mainMenu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: #fff;
+        width: 100%;
+      }
+  nav .openMenu {
+        display: block; /* Show the hamburger icon */
+      }
+  
+  
+      nav .mainMenu li {
+        text-align: center; /* Center align the menu items */
+      }
+  
+  
+      nav .mainMenu .closeMenu {
+        display: block; /* Show the close icon within the menu */
+      }
+}
+
+
+
+@media (max-width: 600px) {
+    body p {
+        font-size: 1rem;
+    }
+    body h1 {
+        font-size: 1.5rem;
+    }
+    body h2 {
+        font-size: 1.1rem;
+    }
+    .intro-section {
+        flex-direction: column; 
+    }
+    
+    .resume-image img {
+        height: 220px;
+    }
+    .profileimage img {
+        max-width: 100%;
+    }
+}
+@media (max-width: 1000px) {
+    .about-section {
+        flex-direction: column;
+    }
+
+    .about-image img {
+        max-width: 100%; /* Adjusts image width to be responsive within the container */
+    }
+}
+@media (max-width: 548px) {
+    .home-footer {
+        flex-direction: column;
+    }
+    .footer-content {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+
+@media (max-width: 480px) {
+    body {
+        font-size: 15px; /* Even smaller for mobile phones */
+    }
+}
