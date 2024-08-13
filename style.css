@@ -7,8 +7,7 @@
     font-family: 'Futura', 'Trebuchet MS', Arial, sans-serif;
 }
 body {
-    background-color: aliceblue;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),url(images/Background-image1.webp);
+    background-color: #fff;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -17,7 +16,7 @@ body {
 
 nav {
     height: 85px;
-    background: #fff;
+    background: #f0f0f0;
     color: #000;
     display: flex;
     align-items: center;
@@ -128,7 +127,6 @@ nav .mainMenu .closeMenu,.icons i {
     line-height: 1.6;
 
 }
-
 .intro h1 {
     margin-bottom: 2%;
     font-size: 2rem;
@@ -141,7 +139,7 @@ nav .mainMenu .closeMenu,.icons i {
 }
 .cta-button {
     display: inline-block;
-    background-color: #48685c;
+    background-color: #270303;
     font-weight: 700;
     color: #fff;
     border-radius: 5px;
@@ -184,7 +182,7 @@ nav .mainMenu .closeMenu,.icons i {
 }
 
 #about-me button {
-    background-color: #7a2121;  /* Blue color, change as per your theme */
+    background-color: #333;  /* Blue color, change as per your theme */
     color: white;
     border: none;
     padding: 10px 20px;
@@ -217,11 +215,17 @@ nav .mainMenu .closeMenu,.icons i {
     }
 }
 
+
 footer {
-    background-color: #333; /* Dark charcoal background */
+    background-color: #000; /* Dark charcoal background */
     color: white;
     text-align: center;
     padding: 20px 0;
+}
+footer h2 {
+    font-size: 2rem;
+    font-family: "futura";
+
 }
 
 .footer-content {
@@ -358,15 +362,19 @@ footer {
 
 }
 .about-nav {
-    background-color: #fff;    
+    background-color: #f0f0f0;    
 }
 .about-nav .mainMenu li a {
     color: #000;
 }
+
+ .resume h1{
+    margin: 20px;
+ }
 .resumelink {
     color: #7a2121;
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .about-section h2, h3 {
@@ -406,7 +414,7 @@ footer {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: #f0f0f0;
+    background-color: #fff;
 }
 .resume {
     display: block;
@@ -414,7 +422,7 @@ footer {
     line-height: 1.6;
 }
 .resume a {
-    color: rgb(28, 194, 103);
+    color: rgb(28, 139, 194);
 }
 .resume h1 {
     text-align: center;
@@ -439,7 +447,7 @@ footer {
 }
 .resumebreak img {
     width: 100%;
-    height: 400px;
+    height: auto;
 }
 
 /* ... existing styles ... */
@@ -558,6 +566,7 @@ footer {
 .timeline-detail {
     display: none;
     position: absolute;
+    
     left: 100%;
     top: 0;
     width: 250px;
