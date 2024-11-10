@@ -412,6 +412,7 @@ footer {
 footer h2 {
     font-size: 2rem;
     font-family: "futura";
+    text-align: center;
 }
 
 .footer-content {
@@ -510,7 +511,6 @@ footer h2 {
     text-align: center; /* Center text for smaller sections */
 }
 
-
 .social-links a {
     list-style: none; /* Removes bullets from the list */
     padding: 0; /* Removes padding */
@@ -522,10 +522,14 @@ footer h2 {
     margin: 5px 0; /* Adds a small margin to each form element */
     padding: 10px; /* Adds padding inside form fields and button */
     width: 90%; /* Makes form elements take up 90% of their parent's width */
+    color: var(--primary-color);
 }
 
-.contact-form button {
+.contact-form input{
     color: var(--font-color1);
+}
+.contact-form button {
+    background-color: var(--font-color1);
 }
 .social-links a {
     font-size: 2rem;
