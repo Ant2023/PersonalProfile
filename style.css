@@ -523,6 +523,10 @@ footer h2 {
     padding: 10px; /* Adds padding inside form fields and button */
     width: 90%; /* Makes form elements take up 90% of their parent's width */
 }
+
+.contact-form button {
+    color: var(--font-color1);
+}
 .social-links a {
     font-size: 2rem;
     color: #fff;
