@@ -118,7 +118,6 @@ nav .mainMenu .closeMenu,.icons i {
     border-radius: 5px;
     padding: 10px;
     margin: 10px;
-    margin-bottom: 0;
     background-color: transparent;
 }
 
@@ -370,7 +369,7 @@ nav .mainMenu .closeMenu,.icons i {
         padding: 10px;
     }
     .intro p {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
     .intro h1{
         font-size: 1.5rem;
@@ -393,7 +392,7 @@ nav .mainMenu .closeMenu,.icons i {
     }
 
     .about-info p{
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
     .home-cta{
         justify-content: center;
@@ -953,7 +952,7 @@ footer h2 {
         font-size: 2rem;
     }
     nav h1 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
     body {
         font-size: 15px; /* Even smaller for mobile phones */
